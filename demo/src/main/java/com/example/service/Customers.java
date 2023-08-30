@@ -1,5 +1,5 @@
-package com.example.service;
- import  com.example.pojo.CustomersDetailsPojo;
+package main.java.com.example.service;
+ import  main.java.com.example.pojo.CustomersDetailsPojo;
 
 public class Customers {
 

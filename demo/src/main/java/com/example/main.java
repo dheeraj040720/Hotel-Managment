@@ -1,8 +1,11 @@
-package com.example;
+package main.java.com.example;
 
 
 
 import java.util.Scanner;
+
+
+import main.java.com.example.pojo.CustomersDetailsPojo;
 
 public class main {
     static Scanner input = new Scanner(System.in);
@@ -85,48 +88,56 @@ public class main {
 
 
 
-    private  static String booking()
-    {
-
+    private  static String booking() {
+        CustomersDetailsPojo customerData = new CustomersDetailsPojo();
         System.out.println("Which type of room  Single or Deluxe");
-        String userinput=input.nextLine();
+        String userinput = input.nextLine();
         System.out.println(userinput);
 
-        if(userinput.equalsIgnoreCase("single"))
-        {
+        String name="";
+
+
+
+        if (userinput.equalsIgnoreCase("single")) {
 
             System.out.println("enter your name ");
-            String name=input.nextLine();
+            name = input.nextLine();
             System.out.println("Enter your phone number ");
-            int phoneNo=input.nextInt();
+            int phoneNo = input.nextInt();
             System.out.println("Enter your room no");
-            int roomNo=input.nextInt();
+            int roomNo = input.nextInt();
 
 
-
-
-
-
-
-        } else if (userinput.equalsIgnoreCase("deluxe")){
+        } else if (userinput.equalsIgnoreCase("deluxe")) {
             System.out.println(userinput);
 
 
             System.out.println("enter your name ");
-            String name=input.nextLine();
+            name = input.nextLine();
             System.out.println("Enter your phone number ");
-            int phoneNo=input.nextInt();
+            int phoneNo = input.nextInt();
             System.out.println("No of persons staying ");
-            int personCount=input.nextInt();
+            int personCount = input.nextInt();
 
-        }
-        else {
+
+        } else {
 
             System.out.println("wrong choice");
         }
 
 
-       return "";
+
+
+        System.out.println(name);
+
+         customerData.setGuestName(name);
+
+
+         String test="";
+         test= customerData.getGuestName().toString();
+        System.out.println(test);
+
+        return "";
 
     }
 

@@ -1,6 +1,6 @@
-package testPrograms;
+package main.java.testPrograms;
 
-import ch.qos.logback.core.net.SyslogOutputStream;
+
 
 interface inf1 {
 

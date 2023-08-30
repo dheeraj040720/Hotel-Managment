@@ -1,9 +1,11 @@
-package com.example.pojo;
+package main.java.com.example.pojo;
 
 public class CustomersDetailsPojo {
 
     private  String guestName;
     private  int guestPhoneno;
+
+
 
     public String getGuestName() {
         return guestName;
@@ -30,6 +32,7 @@ public class CustomersDetailsPojo {
     }
 
     private int guestId;
+
 
 
 }

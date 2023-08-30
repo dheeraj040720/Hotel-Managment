@@ -1,7 +1,6 @@
-package com.example.demo;
+package main.java.com.example.demo;
 
-import org.springframework.beans.factory.annotation.Autowire;
-import org.springframework.stereotype.Component;
+
 
 public class pojo {
 
